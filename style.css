@@ -1,0 +1,164 @@
+
+
+*{
+    padding: 0;
+    margin:0;
+}
+
+
+body{
+    background-color:rgb(9, 9, 34);
+    color:white;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:70px;
+    background-color:rgb(15, 15, 58);
+}
+.left{
+    font-size:1.5rem;
+}
+ul{
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 20px;
+    text-decoration: dashed;
+    color:white;
+}
+li{
+    list-style: none;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color:rgb(145, 88, 145);
+    font-size:1.02rem;
+}
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+    background-color:rgb(9, 9, 34);
+    margin: 10%;
+}
+
+
+.leftsection{
+    width:65%;
+    font-size: 3rem;
+   
+}
+.rightsection{
+    width:35%;
+    
+}
+img{
+
+    
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    
+    background-color: none;
+    color:none;
+
+}
+.purple{
+    color:rgb(145, 88, 145);
+}
+.element{
+    color:yellowgreen;
+}
+
+ @media screen and (max-width: 768px){
+    .firstsection{
+        flex-direction: column;
+        margin: 0;
+    }
+    .leftsection{
+        width:100%;
+        font-size: 2rem;
+    }
+    .rightsection{
+        width:100%;
+    }
+    img{
+        width: 100%;
+        margin: 20px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height:70px;
+        background-color:rgb(15, 15, 58);
+    }
+    .left{
+        font-size:1.5rem;
+    }
+    ul{
+        display:flex;
+        justify-content: center;
+        text-decoration: none;
+        margin-right: 20px;
+        text-decoration: dashed;
+        color:white;
+    }
+    li{
+        list-style: none;
+        margin: 10px;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    a:hover{
+        color:rgb(145, 88, 145);
+        font-size:1.02rem;
+    }
+    .firstsection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* flex-wrap: nowrap; */
+        background-color:rgb(9, 9, 34);
+        margin: 10%;
+    }
+    
+    
+    .leftsection{
+        width:65%;
+        font-size: 3rem;
+       
+    }
+    .rightsection{
+        width:35%;
+        
+    }
+    img{
+        width: 80%;
+        margin: 50px;
+        
+        background-color: none;
+        color:none;
+    
+    }
+    .purple{
+        color:rgb(145, 88, 145);
+    }
+    .element{
+        color:yellowgreen;
+    }
+ }
