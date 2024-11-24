@@ -20,13 +20,10 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
 
-    - name: Sync Files to S3
+    - name: Sync S3 Bucket
       run: |
-        aws s3 sync ./portfolio-website s3://myawsbucketforcloud1 --delete --no-acl
-      # This ensures no ACLs are applied to uploaded files
+        aws s3 sync . s3://myawsbucketforcloud1 --acl public-read --follow-symlinks --delete
 
     - name: Invalidate CloudFront Cache
       run: |
-        aws cloudfront create-invalidation \
-          --distribution-id E3QXYQXRERSEK4  \
-          --paths "/*"
+        aws cloudfront create-invalidation --distribution-id E3QXYQXRERSEK4 --paths "/*"
